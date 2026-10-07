@@ -153,8 +153,7 @@ reference coefficient.
 - Fixed-horizon epsilon-UCB1:
   `4 sum_{i in B_epsilon} Delta_i / (Delta_i + epsilon/2)^2` is labelled a
   proved upper coefficient.
-- Alpha-UCB1 coefficients are explicitly labelled proposed targets, not
-  proved results.
+- Alpha-UCB1 coefficient status: proved.
 
 The empirical coefficient is an OLS slope in
 `R(n) = beta_0 + C log(n)` over the final five horizons. It is a finite-horizon

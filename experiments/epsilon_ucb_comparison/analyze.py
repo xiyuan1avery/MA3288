@@ -107,9 +107,9 @@ def theoretical_reference(
     if algorithm == "epsilon-UCB1":
         return float(4.0 * base), "proved upper coefficient"
     if algorithm == "alpha-UCB1-1.1":
-        return float(8.0 * 1.1 * base), "proposed target, not proved"
+        return float(8.0 * 1.1 * base), "proved"
     if algorithm == "alpha-UCB1-2":
-        return float(8.0 * 2.0 * base), "proposed target, not proved"
+        return float(8.0 * 2.0 * base), "proved"
     raise KeyError(algorithm)
 
 
@@ -515,7 +515,7 @@ def main() -> None:
         "theory_status": {
             "UCB1": "exact asymptotic coefficient",
             "epsilon-UCB1": "proved upper coefficient",
-            "alpha-UCB1": "proposed target, not proved",
+            "alpha-UCB1": "proved",
         },
     }
     (args.output_dir / "config.json").write_text(

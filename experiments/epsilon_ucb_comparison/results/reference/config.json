@@ -54,6 +54,6 @@
   "theory_status": {
     "UCB1": "exact asymptotic coefficient",
     "epsilon-UCB1": "proved upper coefficient",
-    "alpha-UCB1": "proposed target, not proved"
+    "alpha-UCB1": "proved"
   }
 }

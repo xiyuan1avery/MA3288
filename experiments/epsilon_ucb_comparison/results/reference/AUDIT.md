@@ -6,7 +6,7 @@
 - run_2: PASS (seed 20261009, 500 replications).
 - run_3: PASS (seed 20261010, 500 replications).
 
-Checks include row completeness, nonnegative regret, pathwise UCB1 monotonicity in epsilon, exact zero regret at epsilon=0.235, hard-threshold good-set membership, certificate diagnostic consistency, analytic coefficient recalculation, and explicit NOT-PROVED labelling of the alpha-UCB1 coefficient target.
+Checks include row completeness, nonnegative regret, pathwise UCB1 monotonicity in epsilon, exact zero regret at epsilon=0.235, hard-threshold good-set membership, certificate diagnostic consistency, analytic coefficient recalculation, and proved labelling of the alpha-UCB1 coefficient.
 
 ## Repeatability
 

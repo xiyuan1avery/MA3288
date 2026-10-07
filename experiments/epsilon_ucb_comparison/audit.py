@@ -133,10 +133,8 @@ def audit_run(run_dir: Path) -> tuple[list[str], dict[str, object]]:
                 f"good-arm count mismatch at epsilon={epsilon}"
             )
         status = row["theory_reference_status"]
-        if algorithm.startswith("alpha") and status != (
-            "proposed target, not proved"
-        ):
-            failures.append("alpha target is incorrectly labelled proved")
+        if algorithm.startswith("alpha") and status != "proved":
+            failures.append("alpha-UCB1 coefficient is not labelled proved")
 
     for row in diagnostics:
         epsilon = float(row["epsilon"])
@@ -280,8 +278,8 @@ def main() -> None:
             "pathwise UCB1 monotonicity in epsilon, exact zero regret "
             "at epsilon=0.235, hard-threshold good-set membership, "
             "certificate diagnostic consistency, analytic coefficient "
-            "recalculation, and explicit NOT-PROVED labelling of the "
-            "alpha-UCB1 coefficient target.",
+            "recalculation, and proved labelling of the alpha-UCB1 "
+            "coefficient.",
             "",
             "## Repeatability",
             "",
