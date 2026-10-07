@@ -1,0 +1,59 @@
+{
+  "replications": 500,
+  "seed": 20261008,
+  "reward_model": "independent unit-variance Gaussian rewards",
+  "means": [
+    1.0,
+    0.95,
+    0.87,
+    0.82,
+    0.77
+  ],
+  "gaps": [
+    0.0,
+    0.05,
+    0.13,
+    0.18,
+    0.23
+  ],
+  "epsilons": [
+    0.0,
+    0.02,
+    0.05,
+    0.06,
+    0.09,
+    0.12,
+    0.14,
+    0.19,
+    0.235
+  ],
+  "horizons": [
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    100000,
+    200000,
+    500000,
+    1000000
+  ],
+  "main_epsilon": 0.09,
+  "main_good_set": [
+    1,
+    2
+  ],
+  "alpha_values": [
+    1.1,
+    2.0
+  ],
+  "confidence_exponent_q": 4,
+  "coefficient_fit": "OLS slope in R(n)=beta_0+C log(n), using the last five horizons",
+  "bootstrap_draws": 1000,
+  "theory_status": {
+    "UCB1": "exact asymptotic coefficient",
+    "epsilon-UCB1": "proved upper coefficient",
+    "alpha-UCB1": "proposed target, not proved"
+  }
+}
